@@ -1,11 +1,15 @@
 import './App.css'
-import { BrowserRouter, Route } from 'react-router'
-import Login from './organisms/Login'
+import { BrowserRouter, Route, Routes } from 'react-router'
+import Login from './pages/Login'
+import Dashboard from './pages/Dashboard'
 
 export default function App() {
-  return(
+  return (
     <BrowserRouter>
-      <Route path='/' element={<Login/>}/>
+      <Routes>
+        <Route index element={<Login />} />
+        <Route path='/dashboard' element={<Dashboard/>}/>
+      </Routes>
     </BrowserRouter>
   )
 }
