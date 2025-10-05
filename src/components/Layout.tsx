@@ -2,12 +2,8 @@ import BottomNavigation from "./BottomNavigation";
 
 export default function Layout({ children }) {
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
-      {/* Main content area */}
-      <main className="flex-1 pb-24">
+    <div className="min-h-screen w-[100dvw] bg-gray-50 flex flex-col overflow-x-hidden">
         {children}
-      </main>
-
       <BottomNavigation />
     </div>
   );

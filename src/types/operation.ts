@@ -1,6 +1,6 @@
 export interface Operation{
   id: string,
-  created_at: string
+  createdAt: string
   type: TypeOperation
   amount: number
   currency: string
@@ -8,9 +8,9 @@ export interface Operation{
 }
 
 enum TypeOperation {
-  withdrawal = "withdrawal",
-  payment = "payment",
-  invoice = "invoice",
-  deposit = "deposit",
+  withdrawal = "Withdrawal",
+  payment = "Payment",
+  invoice = "Invoice",
+  deposit = "Deposit",
 
 }
