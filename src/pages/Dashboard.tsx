@@ -23,6 +23,7 @@ export default function Dashboard() {
 
   return (
     <div className="w-[100vw] h-auto bg-green-900">
+      <h1 className="w-full flex justify-center text-center text-xl text-white mb-2">My Accounts</h1>
       <div className="w-full flex justify-center">
         {account && <BigCard account={account} />}
       </div>
