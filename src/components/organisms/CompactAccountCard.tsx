@@ -1,7 +1,6 @@
 import type { Account } from "../../types/account";
 import CurrencyAtom from "../atoms/CurrencyAtom";
 import CardNumberLabeled from "../molecules/CardNumberLabeled";
-import { Button } from "../ui/button";
 
 type Props = {
   account: Account

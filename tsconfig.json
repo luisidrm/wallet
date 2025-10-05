@@ -5,7 +5,7 @@
     { "path": "./tsconfig.node.json" }
   ],
     "compilerOptions": {
-      "erasableSyntaxOnly": false,
+      "erasableSyntaxOnly": true,
     "rootDir": ".",
     "paths": {
       "@/*": ["./src/*"]

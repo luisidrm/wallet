@@ -7,10 +7,11 @@ export interface Operation{
   description: string
 }
 
-enum TypeOperation {
-  withdrawal = "Withdrawal",
-  payment = "Payment",
-  invoice = "Invoice",
-  deposit = "Deposit",
+export const TypeOperation = {
+  withdrawal: "Withdrawal",
+  payment: "Payment",
+  invoice: "Invoice",
+  deposit: "Deposit",
+} as const
 
-}
+export type TypeOperation = keyof typeof TypeOperation

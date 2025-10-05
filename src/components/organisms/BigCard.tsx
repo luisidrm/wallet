@@ -1,4 +1,3 @@
-import { number } from "zod";
 import type { Account } from "../../types/account";
 import BalanceMolecule from "../molecules/BalanceMolecule";
 import CardNameMolecule from "../molecules/CardNameMolecule";

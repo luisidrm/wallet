@@ -52,7 +52,7 @@ export default function Historic() {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div className="p-8">
+    <div className="p-8 bg-green-600">
       <h1 className="text-3xl font-bold mb-6">Transaction History</h1>
 
       <div className="bg-white rounded-lg shadow p-4 mb-6">
@@ -120,7 +120,7 @@ export default function Historic() {
               amount={transaction.amount}
               type={transaction.type}
               created_at={transaction.createdAt}
-              isIncoming={transaction.type === "Deposit"}
+              isIncoming={transaction.type === "deposit"}
 
             />
           ))

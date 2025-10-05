@@ -17,7 +17,14 @@ export default function Dashboard() {
   })
 
   if (!accounts) {
-    return <div>Error: You dont have accounts</div>
+    
+    return <div>Error: You dont have accounts </div>
+  }
+  if(error){
+    <div>{error}</div>
+  }
+  if(loading){
+    <div>Loading...</div>
   }
 
 

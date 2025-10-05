@@ -8,6 +8,6 @@ type TextInput={
 
 export default function PasswordInput({placeholder, value, changeFn }:TextInput){
   return(
-    <Input type="password" placeholder={placeholder} value={value} onChange={(val:string)=>changeFn(val)} />
+    <Input type="password" placeholder={placeholder} value={value} onChange={(e:React.ChangeEvent<HTMLInputElement>)=>changeFn(e.target.value)} />
   )
 }
