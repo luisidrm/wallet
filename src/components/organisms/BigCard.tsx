@@ -1,3 +1,4 @@
+import { number } from "zod";
 import type { Account } from "../../types/account";
 import BalanceMolecule from "../molecules/BalanceMolecule";
 import CardNameMolecule from "../molecules/CardNameMolecule";
@@ -19,17 +20,22 @@ export default function BigCard({ account }: Props) {
     };
 
     const formatBalance = (amount: number, currency: string) => {
-      return new Intl.NumberFormat('en-US', {
-        style: 'currency',
-        currency: currency
-      }).format(amount);
-    };
+      try{
+
+        return new Intl.NumberFormat('en-US', {
+          style: 'currency',
+          currency: currency
+        }).format(amount);
+      }catch(error){
+        return `${balance} ${currency} `
+      }
+      };
 
     return { formatCardNumber, formatBalance };
   }
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 w-96 border border-gray-100">
+    <div className="bg-white rounded-xl shadow-lg p-6 mt-4 w-96 border border-gray-100">
       <CurrencyMolecule currency={currency} />
       <CardNumberMolecule formatCardNumber={formatCardNumber} cardNumber={cardNumber} />
       <CardNameMolecule cardName={cardName} />

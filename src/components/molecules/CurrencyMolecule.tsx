@@ -7,7 +7,7 @@ type Props ={
 
 export default function CurrencyMolecule({currency}:Props){
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 w-96 border border-gray-100">
+    <div className="flex px-4 justify-between">
       <CurrencyAtom currency={currency}/>
       <CreditCard className="text-gray-400" size={24} />
     </div>  

@@ -1,7 +1,7 @@
 import CardNumberAtom from "../atoms/CardNumberAtom";
 
 type Props={
-  formatCardNumber: (arg0:string)=>void
+  formatCardNumber: (arg0:string)=>string
   cardNumber: string
 }
 
