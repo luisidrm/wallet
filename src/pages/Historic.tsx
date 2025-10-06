@@ -52,7 +52,7 @@ export default function Historic() {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div className="p-8 bg-green-600">
+    <div className="p-8 bg-slate-300">
       <h1 className="text-3xl font-bold mb-6">Transaction History</h1>
 
       <div className="bg-white rounded-lg shadow p-4 mb-6">

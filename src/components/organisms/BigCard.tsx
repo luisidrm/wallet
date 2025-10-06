@@ -34,7 +34,7 @@ export default function BigCard({ account }: Props) {
   }
 
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 mt-4 w-96 border border-gray-100">
+    <div className="bg-white rounded-xl shadow-xl p-6 mt-4 w-96 border border-gray-100">
       <CurrencyMolecule currency={currency} />
       <CardNumberMolecule formatCardNumber={formatCardNumber} cardNumber={cardNumber} />
       <CardNameMolecule cardName={cardName} />

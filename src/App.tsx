@@ -8,13 +8,13 @@ import Historic from './pages/Historic'
 export default function App() {
   return (
     <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route index element={<Login />} />
+      <Routes>
+        <Route index element={<Login />} />
+        <Route element={<Layout />}>
           <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/historic' element={<Historic/>} />
-        </Routes>
-      </Layout>
+          <Route path='/historic' element={<Historic />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   )
 }

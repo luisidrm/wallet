@@ -8,6 +8,6 @@ type TextInput={
 
 export default function TextInput({placeholder, value, changeFn }:TextInput){
   return(
-    <Input type="text" placeholder={placeholder} value={value} onChange={(e:React.ChangeEvent<HTMLInputElement>)=>changeFn(e.target.value)} />
+    <Input className="bg-white" type="text" placeholder={placeholder} value={value} onChange={(e:React.ChangeEvent<HTMLInputElement>)=>changeFn(e.target.value)} />
   )
 }

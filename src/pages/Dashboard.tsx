@@ -20,22 +20,22 @@ export default function Dashboard() {
     
     return <div>Error: You dont have accounts </div>
   }
-  if(error){
-    <div>{error}</div>
-  }
   if(loading){
     <div>Loading...</div>
+  }
+  if(error){
+    <div>{error}</div>
   }
 
 
   return (
-    <div className="w-[100vw] h-auto bg-green-900">
-      <h1 className="w-full flex justify-center text-center text-xl text-white mb-2">My Accounts</h1>
+    <div className="w-[100vw] h-auto bg-slate-300">
+      <h1 className="w-full flex justify-center text-center text-2xl text-black font-semibold mb-2">My Bank Accounts</h1>
       <div className="w-full flex justify-center">
         {account && <BigCard account={account} />}
       </div>
       <div className="flex justify-start text-md px-6">
-        <h1 className="text-md text-center text-slate-50">Mis Tarjetas:</h1>
+        <h1 className="text-md text-center text-2xl text-black font-semibold">Mis Tarjetas:</h1>
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 p-6 gap-4">
         {accounts.map(item => (
