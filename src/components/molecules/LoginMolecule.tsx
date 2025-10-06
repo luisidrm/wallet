@@ -11,6 +11,11 @@ type Props ={
 }
 
 export default function LoginMolecule({user,password,setUser, setPassword}:Props){
+
+  const goToDashboard=()=>{
+    window.location.href="/dashboard"
+  }
+
   return(
     <div className="flex flex-col gap-2 justify-center place-items-center">
       <BigCard 
@@ -23,7 +28,7 @@ export default function LoginMolecule({user,password,setUser, setPassword}:Props
       />
       <TextInput placeholder="Nombre de Usuario" value={user} changeFn={setUser} />
       <PasswordInput placeholder="Contraseña" value={password} changeFn={setPassword}/>
-      <Button type="button" className="w-full mt-2">Login</Button>
+      <Button onClick={()=>goToDashboard()} type="button" className="w-full mt-2">Login</Button>
     </div>
   )
 }
